@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80" role="img" aria-label="Logo serwisu Szprycha">
+  <circle cx="40" cy="40" r="36" fill="#14532d"/>
+  <circle cx="40" cy="40" r="24" fill="none" stroke="#f7f7f5" stroke-width="4"/>
+  <g stroke="#f7f7f5" stroke-width="2.5">
+    <line x1="40" y1="16" x2="40" y2="64"/>
+    <line x1="16" y1="40" x2="64" y2="40"/>
+    <line x1="23" y1="23" x2="57" y2="57"/>
+    <line x1="57" y1="23" x2="23" y2="57"/>
+  </g>
+  <circle cx="40" cy="40" r="6" fill="#c2410c"/>
+</svg>

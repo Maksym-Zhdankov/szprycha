@@ -1,0 +1,364 @@
+/* Szprycha — serwis rowerowy | klasa 4TI */
+:root {
+  --kolor-glowny: #14532d;
+  --kolor-akcent: #c2410c;
+  --kolor-tlo: #f7f7f5;
+  --kolor-tekst: #1f2933;
+  --kolor-tekst-pomocniczy: #4b5563;
+  --kolor-obramowanie: #d8d8d2;
+  --kolor-bialy: #fff;
+
+  --czcionka-naglowki: "Segoe UI Semibold", "Segoe UI", Tahoma, Arial, sans-serif;
+  --czcionka-tekst: "Segoe UI", Tahoma, Arial, sans-serif;
+
+  --szerokosc-kontenera: 1100px;
+  --odstep: 1.5rem;
+  --zaokraglenie: 8px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--kolor-tlo);
+  color: var(--kolor-tekst);
+  font-family: var(--czcionka-tekst);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--czcionka-naglowki);
+  color: var(--kolor-glowny);
+  line-height: 1.25;
+}
+
+h1 { margin-top: 0; }
+h2 { margin-top: 0; }
+
+img { max-width: 100%; height: auto; }
+
+.kontener {
+  width: min(100% - 2 * var(--odstep), var(--szerokosc-kontenera));
+  margin-inline: auto;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--kolor-akcent);
+  outline-offset: 2px;
+}
+
+.pomin-nawigacje {
+  position: absolute;
+  left: -9999px;
+}
+.pomin-nawigacje:focus {
+  position: static;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--kolor-akcent);
+  color: var(--kolor-bialy);
+}
+
+.naglowek {
+  background: var(--kolor-glowny);
+  color: var(--kolor-bialy);
+}
+
+.naglowek__pas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.75rem;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--kolor-bialy);
+  font-family: var(--czcionka-naglowki);
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__link {
+  color: var(--kolor-bialy);
+  text-decoration: none;
+  padding-block: 0.25rem;
+  border-bottom: 2px solid transparent;
+}
+.menu__link:hover { border-bottom-color: var(--kolor-bialy); }
+.menu__link--aktywny { border-bottom-color: var(--kolor-akcent); }
+
+.hero {
+  padding-block: 4rem;
+}
+
+.hero__pas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.hero__pas > div:last-child {
+  text-align: center;
+}
+
+.przycisk {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.7rem 1.2rem;
+  border: 2px solid var(--kolor-akcent);
+  border-radius: var(--zaokraglenie);
+  background: var(--kolor-akcent);
+  color: var(--kolor-bialy);
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.przycisk:hover {
+  text-decoration: underline;
+}
+
+.sekcja {
+  padding-block: 3rem;
+}
+
+.uslugi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--odstep);
+}
+
+.uslugi-dodatkowe__siatka {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--odstep);
+}
+
+.karta {
+  padding: 1.5rem;
+  background: var(--kolor-bialy);
+  border: 1px solid var(--kolor-obramowanie);
+  border-radius: var(--zaokraglenie);
+}
+
+.karta img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+
+.karta h3 {
+  margin-bottom: 0.5rem;
+}
+
+.karta p {
+  margin-bottom: 0;
+}
+
+.dlaczego {
+  padding-block: 3rem;
+  background: var(--kolor-glowny);
+  color: var(--kolor-bialy);
+}
+
+.dlaczego h2 {
+  color: var(--kolor-bialy);
+}
+
+.dlaczego__siatka {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--odstep);
+  text-align: center;
+}
+
+.dlaczego__siatka div {
+  display: flex;
+  flex-direction: column;
+}
+
+.dlaczego strong {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.cennik {
+  overflow-x: auto;
+}
+
+.cennik table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--kolor-bialy);
+}
+
+.cennik caption {
+  margin-bottom: 0.75rem;
+  color: var(--kolor-tekst-pomocniczy);
+  font-weight: 700;
+  text-align: left;
+}
+
+.cennik th,
+.cennik td {
+  padding: 0.75rem;
+  border: 1px solid var(--kolor-obramowanie);
+  text-align: left;
+}
+
+.cennik th {
+  background: var(--kolor-glowny);
+  color: var(--kolor-bialy);
+}
+
+.cennik tbody tr:nth-child(even) {
+  background: var(--kolor-tlo);
+}
+
+.cennik th:last-child,
+.cennik td:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.kroki {
+  padding-left: 1.5rem;
+}
+
+.kroki li + li {
+  margin-top: 0.75rem;
+}
+
+.kontakt__siatka {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--odstep);
+}
+
+.kontakt__siatka > section {
+  padding: 1.5rem;
+  background: var(--kolor-bialy);
+  border: 1px solid var(--kolor-obramowanie);
+  border-radius: var(--zaokraglenie);
+}
+
+.formularz {
+  max-width: 800px;
+}
+
+.formularz form {
+  display: grid;
+  gap: 1rem;
+}
+
+.pole {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.pole label {
+  font-weight: 700;
+}
+
+.pole input,
+.pole select,
+.pole textarea {
+  width: 100%;
+  padding: 0.65rem;
+  border: 1px solid var(--kolor-obramowanie);
+  border-radius: var(--zaokraglenie);
+  background: var(--kolor-bialy);
+  color: var(--kolor-tekst);
+  font: inherit;
+}
+
+.pole textarea {
+  resize: vertical;
+}
+
+.formularz .przycisk {
+  justify-self: start;
+  font: inherit;
+}
+
+.stopka {
+  padding-block: 2rem;
+  background: var(--kolor-tekst);
+  color: var(--kolor-bialy);
+}
+
+.stopka__siatka {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--odstep);
+}
+
+.stopka p {
+  margin: 0 0 0.35rem;
+}
+
+.stopka a {
+  color: var(--kolor-bialy);
+}
+
+@media (max-width: 720px) {
+  :root {
+    --odstep: 1rem;
+  }
+
+  .hero {
+    padding-block: 2rem;
+  }
+
+  .hero__pas,
+  .uslugi,
+  .uslugi-dodatkowe__siatka,
+  .dlaczego__siatka,
+  .kontakt__siatka,
+  .stopka__siatka {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__pas {
+    gap: 2rem;
+  }
+
+  .sekcja,
+  .dlaczego {
+    padding-block: 2rem;
+  }
+
+  .naglowek__pas {
+    align-items: flex-start;
+  }
+
+  .cennik th,
+  .cennik td {
+    padding: 0.5rem;
+  }
+}

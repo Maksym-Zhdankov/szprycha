@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-label="Rower oparty o ścianę warsztatu">
+  <rect width="640" height="400" fill="#e8e6df"/>
+  <rect y="300" width="640" height="100" fill="#d3d0c6"/>
+  <g stroke="#4b5563" stroke-width="5" fill="none">
+    <line x1="90" y1="60" x2="90" y2="300"/>
+    <line x1="550" y1="60" x2="550" y2="300"/>
+    <line x1="60" y1="120" x2="580" y2="120"/>
+    <line x1="60" y1="200" x2="580" y2="200"/>
+  </g>
+  <g>
+    <circle cx="205" cy="270" r="66" fill="none" stroke="#1f2933" stroke-width="9"/>
+    <circle cx="425" cy="270" r="66" fill="none" stroke="#1f2933" stroke-width="9"/>
+    <g stroke="#9ca3af" stroke-width="2">
+      <line x1="205" y1="204" x2="205" y2="336"/><line x1="139" y1="270" x2="271" y2="270"/>
+      <line x1="158" y1="223" x2="252" y2="317"/><line x1="252" y1="223" x2="158" y2="317"/>
+      <line x1="425" y1="204" x2="425" y2="336"/><line x1="359" y1="270" x2="491" y2="270"/>
+      <line x1="378" y1="223" x2="472" y2="317"/><line x1="472" y1="223" x2="378" y2="317"/>
+    </g>
+    <g stroke="#14532d" stroke-width="11" fill="none" stroke-linecap="round">
+      <path d="M205 270 L295 270 L250 175 Z"/>
+      <path d="M295 270 L340 175 L250 175"/>
+      <path d="M340 175 L425 270"/>
+      <path d="M340 175 L352 140"/>
+      <path d="M250 175 L240 140"/>
+    </g>
+    <line x1="320" y1="140" x2="384" y2="140" stroke="#1f2933" stroke-width="9" stroke-linecap="round"/>
+    <line x1="215" y1="140" x2="268" y2="140" stroke="#1f2933" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="295" cy="270" r="16" fill="#c2410c"/>
+  </g>
+</svg>

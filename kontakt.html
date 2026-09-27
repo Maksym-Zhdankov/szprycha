@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt — Szprycha</title>
+  <meta name="description" content="Kontakt do serwisu rowerowego Szprycha w Szczucinie: adres, telefon, godziny otwarcia, formularz.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <a class="pomin-nawigacje" href="#tresc">Przejdź do treści</a>
+  <header class="naglowek">
+    <div class="kontener naglowek__pas">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="Szprycha — serwis rowerowy" width="40" height="40">
+        <span>Szprycha</span>
+      </a>
+      <nav aria-label="Menu główne">
+        <ul class="menu">
+          <li><a class="menu__link" href="index.html">Start</a></li>
+          <li><a class="menu__link" href="uslugi.html">Usługi i cennik</a></li>
+          <li><a class="menu__link menu__link--aktywny" href="kontakt.html" aria-current="page">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="tresc">
+    <section class="sekcja">
+      <div class="kontener">
+        <h1>Kontakt</h1>
+        <div class="kontakt__siatka">
+          <section>
+            <h2>Dane kontaktowe</h2>
+            <p>Serwis rowerowy Szprycha<br>ul. Warsztatowa 7<br>33-230 Szczucin</p>
+            <p>Telefon: <a href="tel:+48140000000">14 000 00 00</a><br>
+            E-mail: <a href="mailto:serwis@szprycha.example">serwis@szprycha.example</a></p>
+          </section>
+          <section>
+            <h2>Godziny otwarcia</h2>
+            <p>poniedziałek – piątek: 9:00 – 18:00<br>
+            sobota: 9:00 – 13:00<br>
+            niedziela: nieczynne</p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="sekcja">
+      <div class="kontener formularz">
+        <h2>Zgłoś rower do serwisu</h2>
+        <form action="#" method="post">
+          <div class="pole">
+            <label for="imie">Imię</label>
+            <input type="text" id="imie" name="imie" required>
+          </div>
+          <div class="pole">
+            <label for="email">Adres e-mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="pole">
+            <label for="temat">Temat wiadomości</label>
+            <select id="temat" name="temat" required>
+              <option value="">...</option>
+              <option value="przeglad-podstawowy">Przegląd podstawowy</option>
+              <option value="serwis-napedu">Serwis napędu</option>
+              <option value="centrowanie-kol">Centrowanie kół</option>
+              <option value="serwis-hamulcow">Serwis hamulców</option>
+              <option value="diagnostyka-e-bike">Diagnostyka e-bike</option>
+            </select>
+          </div>
+          <div class="pole">
+            <label for="opis">Opis usterki</label>
+            <textarea id="opis" name="opis" rows="6"></textarea>
+          </div>
+          <button class="przycisk" type="submit">Wyślij zgłoszenie</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="stopka">
+    <div class="kontener stopka__siatka">
+      <div><p>Szprycha — serwis rowerowy</p><p>ul. Warsztatowa 7, 33-230 Szczucin</p></div>
+      <div><p><a href="tel:+48140000000">tel. 14 000 00 00</a></p><p><a href="mailto:serwis@szprycha.example">serwis@szprycha.example</a></p></div>
+      <div><p>pon.–pt. 9:00–18:00</p><p>sob. 9:00–13:00</p><p>© 2026 Szprycha. Witryna wykonana na zajęciach w PCEiKZ Szczucin.</p></div>
+    </div>
+  </footer>
+</body>
+</html>
