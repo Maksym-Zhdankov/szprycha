@@ -1,1 +1,1 @@
-# szprycha.github.io
+# szprycha
